@@ -18,11 +18,12 @@ The input image must be in raw format, i.e. *DMG images are not supported* and m
 Issues
 ------
 This software is *experimental* and work in progress. The following limitations are known:
-1. hfs2tar only understands raw image files. DMG files must be converted with dmg2img (http://vu1tur.eu.org/tools/) before using them with hfs2tar.
-2. The images must also contain an apple partition map - this is the default with most Mac OS X disk images.
-3. The first HFS-plus partition in the image is converted to a tar archive. All other partitions are ignored.
-4. Currently, hfs2tar does not support HFS files with require the extents overflow feature. This feature is typically used only on highly fragmented disk images.
-5. Modification times of the tar archive will be incorrect.
+
+ 1. hfs2tar only understands raw image files. DMG files must be converted with dmg2img (http://vu1tur.eu.org/tools/) before using them with hfs2tar.
+ 2. The images must also contain an apple partition map - this is the default with most Mac OS X disk images.
+ 3. The first HFS-plus partition in the image is converted to a tar archive. All other partitions are ignored.
+ 4. Currently, hfs2tar does not support HFS files with require the extents overflow feature. This feature is typically used only on highly fragmented disk images.
+ 5. Modification times of the tar archive will be incorrect.
 
 Contact
 -------
