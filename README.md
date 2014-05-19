@@ -3,7 +3,7 @@ hfs2tar
 
 *Convert a HFS-plus volume image to a tar archive in user space*
 
-*hfs2tar* is a small little tool that will convert a raw image of a HFS-plus volume (including the Apple Partition Map) and convert it to a tar archive. *WARNING*: this is work in progress - there are still many limitiations. See Issues.
+*hfs2tar* is a small little tool that will convert a raw image of a HFS-plus volume (including the Apple Partition Map) to a tar archive. *WARNING*: this is work in progress - there are still many limitiations. See Issues.
 
 Build Instructions
 ------------------
@@ -22,7 +22,7 @@ This software is *experimental* and work in progress. The following limitations 
  1. hfs2tar only understands raw image files. DMG files must be converted with dmg2img (http://vu1tur.eu.org/tools/) before using them with hfs2tar.
  2. The images must also contain an apple partition map - this is the default with most Mac OS X disk images.
  3. The first HFS-plus partition in the image is converted to a tar archive. All other partitions are ignored.
- 4. Currently, hfs2tar does not support HFS files with require the extents overflow feature. This feature is typically used only on highly fragmented disk images.
+ 4. Currently, hfs2tar does not support HFS files that require the extents overflow feature. This feature is uncommon and typically only used on highly fragmented disk images.
  5. Modification times of the tar archive will be incorrect.
 
 Contact
